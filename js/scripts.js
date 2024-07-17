@@ -22,7 +22,7 @@ window.onscroll = () => {
 
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('');
+    menuIcon.classList.toggle('fa-solid fa-bars');
     navbar.classList.toggle('active');
 }
 
