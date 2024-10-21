@@ -297,7 +297,9 @@ span {
     margin-top: 2rem;
 }
 
-.about,ul,li {
+.about,
+ul,
+li {
     font-size: 18px;
 }
 
@@ -316,7 +318,7 @@ span {
 }
 
 .about-content h3 a {
-    color:black;
+    color: black;
 }
 
 .about-content p {
@@ -513,6 +515,7 @@ span {
     color: white;
 }
 
+/* 
 @media(max-width:1285px) {
     html {
         font-size: 55%;
@@ -604,5 +607,158 @@ span {
     }
     .projects-container{
         grid-template-columns: repeat(1,1fr);
+    }
+} */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+        /* Reduce el tamaño base de la fuente */
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 6rem;
+        /* Reduce el tamaño del texto */
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+        width: 80%;
+        /* Aumenta el ancho del texto */
+    }
+
+    .home-img img {
+        width: 50vw;
+        /* Ajusta el tamaño de la imagen */
+    }
+
+    .about img {
+        width: 50vw;
+        /* Imagen más pequeña */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* Proyectos en una columna */
+    }
+
+    .projects-box {
+        height: auto;
+        /* Elimina la altura fija */
+        padding: 2rem;
+        /* Más espacio interno */
+    }
+
+    .contact form {
+        max-width: 90%;
+        /* Ajusta el ancho del formulario */
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+        /* Reduce el espaciado entre los enlaces */
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%;
+        /* Fuente aún más pequeña */
+    }
+
+    .header {
+        padding: 1rem 3%;
+    }
+
+    .navbar {
+        display: inline;
+        /* Ocultar menú completo en móviles pequeños */
+    }
+
+    #menu-icon {
+        display: inline;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-color);
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .home {
+        padding: 8rem 5% 2rem;
+        /* Menos padding para espacio en la pantalla */
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+        width: 100%;
+        /* Texto más ajustado */
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 70vw;
+    }
+
+    .about-content {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* Proyectos en una columna */
+        margin: 0 2rem;
+    }
+
+    .projects-box {
+        padding: 1rem;
+    }
+
+    .contact form {
+        max-width: 95%;
+        /* Más compacto para móviles pequeños */
+    }
+
+    .footer ul li {
+        padding: 0 8px;
+        /* Menos espacio entre los enlaces */
     }
 }
